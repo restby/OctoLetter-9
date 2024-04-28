@@ -33,9 +33,20 @@
       background-color: #1890ff;
     }
 
+    .social__wrap br:first-child {
+      display: none;
+    }
+
     @media screen and (max-width: 599.98px) {
       .full-width img,
       .main-block__img img {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .three-cols.partners > .column,
+      .three-cols__img,
+      .three-cols__img img,
+      .three-cols__wrap {
         width: 100% !important;
         max-width: 100% !important;
       }
@@ -64,8 +75,34 @@
         line-height: 17px !important;
       }
 
+      .three-cols__wrap a {
+        display: inline-block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        text-align: center !important;
+      }
+
+      .three-cols__item img {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .two-cols .column:first-child {
+        max-width: 326px !important;
+      }
+      .two-cols .column:last-child {
+        max-width: 326px !important;
+      }
+      .two-cols .column:last-child table {
+        text-align: center !important;
+      }
+
       .social__wrap p {
-        text-align: center;
+        text-align: center !important;
+      }
+
+      .social__wrap br:first-child {
+        display: inline !important;
       }
     }
 
@@ -73,6 +110,30 @@
       .mobile-padding {
         padding-left: 32px !important;
         padding-right: 32px !important;
+      }
+      .three-cols > .column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      .two-cols .column:first-child {
+        max-width: 107px !important;
+      }
+      .two-cols .column:last-child {
+        max-width: 144px !important;
+      }
+      .two-cols .column:last-child table {
+        text-align: left !important;
+      }
+      .three-cols__item td {
+        padding-right: 7px !important;
+        padding-bottom: 0 !important;
+      }
+      .three-cols__item img {
+        width: 100px !important;
+      }
+
+      .social__wrap br {
+        display: none !important;
       }
     }
 
